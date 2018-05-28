@@ -97,7 +97,7 @@ trait MessageTrait
      */
     public function hasHeader($name)
     {
-        return array_key_exists($this->headerNames, strtolower($name));
+        return array_key_exists(strtolower($name), $this->headerNames);
     }
 
     /**
