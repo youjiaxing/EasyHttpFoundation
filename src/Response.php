@@ -98,10 +98,10 @@ class Response implements ResponseInterface, StatusCodeInterface
         if (empty($reason) && isset(self::$phrases[$this->statusCode])) {
             $this->reasonPhrase = self::$phrases[$this->statusCode];
         } else {
-            $this->reasonPhrase = $reason;
+            $this->reasonPhrase = (string)$reason;
         }
 
-        $this->protocolVersion = $reason;
+        $this->protocolVersion = $version;
     }
 
 

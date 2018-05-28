@@ -11,12 +11,16 @@
     ],
     "autoload": {
         "psr-4": {
-            "EasyHttpFoundation\\": "src/",
-            "EasyHttpFoundation\\Test\\": "tests/"
+            "EasyHttpFoundation\\": "src/"
         },
         "files": [
             "src/functions_include.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EasyHttpFoundation\\Test\\": "tests/"
+        }
     },
     "require": {
         "php": ">=5.4.0",
